@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -36,4 +37,114 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+.title {
+  position: absolute;
+  /* Posiciona este contenedor en relación al contenedor padre */
+  top: 50%;
+  /* Centra verticalmente */
+  left: 50%;
+  /* Centra horizontalmente */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* Ajusta el centro para que sea realmente centrado */
+}
+.title .bh {
+  font-size: 48px;
+  font-family: sans-serif, Bold;
+  color: #FFFFFF;
+  margin-bottom: -30px;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.title .bh .bh.hover {
+  background-color: #8277d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.title h3 {
+  font-size: 22px;
+  font-family: "Josefin Sans", Bold;
+  color: #FFFFFF;
+}
+.title .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  /* Añade espacio entre el subtítulo y el formulario */
+}
+.title .form .buscador {
+  width: 653px;
+  height: 63px;
+  font-family: Bold, sans-serif;
+}
+.title .form .type {
+  font-family: Bold, sans-serif;
+}
+.title .form .btn {
+  width: 116px;
+  height: 64px;
+  background-color: #5474FD;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-family: "Aleo";
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.title .form .btn:hover {
+  background-color: #94c4ec;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.title .form .btn:active {
+  background-color: #3144a3;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer {
+  width: 1769px;
+  height: 80px;
+  background-color: #5474FD;
+}
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer h2 {
+  margin-left: 215px;
+  margin-right: 300px;
+  font-family: bold;
+  color: #FFFFFF;
+}
+footer ul {
+  list-style-type: none;
+  margin-right: 394px;
+  margin-left: -716px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer ul li {
+  margin-left: 40px;
+}
+footer ul li .claseUno {
+  margin-left: 600px;
+}
+footer ul li a {
+  font-family: Bold;
+  color: #FFFFFF;
+  list-style: none;
+  text-decoration: none;
 }
