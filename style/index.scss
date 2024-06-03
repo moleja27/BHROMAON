@@ -1,3 +1,12 @@
+$color-primario: #5474FD;
+$color-secundario: #8277d4;
+$color-third: #FFFFFF;
+$color-cuatro: #94c4ec;
+;
+$color-five: #3144a3;
+$color-six: #00A2FF;
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,6 +34,7 @@ body {
             width: 138.50%;
             height: 100%;
             object-fit: cover;
+            /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
             display: block;
         }
     }
@@ -33,24 +43,21 @@ body {
 
 .title {
     position: absolute;
-    /* Posiciona este contenedor en relación al contenedor padre */
     top: 50%;
-    /* Centra verticalmente */
     left: 50%;
-    /* Centra horizontalmente */
     transform: translate(-50%, -50%);
-    /* Ajusta el centro para que sea realmente centrado */
+
 
 
     .bh {
         font-size: 48px;
         font-family: sans-serif, Bold;
-        color: #FFFFFF;
+        color: $color-third;
         margin-bottom: -30px;
         transition: color 0.3s ease, transform 0.3s ease;
 
         .bh.hover {
-            background-color: #8277d4;
+            background-color: $color-secundario;
             transform: scale(1.1);
 
         }
@@ -61,13 +68,12 @@ body {
     h3 {
         font-size: 22px;
         font-family: "Josefin Sans", Bold;
-        color: #FFFFFF;
+        color: $color-third;
     }
 
     .form {
         display: flex;
         margin-top: 20px;
-        /* Añade espacio entre el subtítulo y el formulario */
 
         .buscador {
 
@@ -83,8 +89,8 @@ body {
         .btn {
             width: 116px;
             height: 64px;
-            background-color: #5474FD;
-            color: #FFFFFF;
+            background-color: $color-primario;
+            color: $color-third;
             font-size: 26px;
             font-family: "Aleo";
             border-radius: 5px;
@@ -95,12 +101,12 @@ body {
         }
 
         .btn:hover {
-            background-color: #94c4ec;
+            background-color: $color-cuatro;
             transform: scale(1.1);
         }
 
         .btn:active {
-            background-color: #3144a3;
+            background-color: $color-five;
             transform: scale(1.05);
         }
 
@@ -116,7 +122,7 @@ body {
 footer {
     width: 1769px;
     height: 80px;
-    background-color: #5474FD;
+    background-color: $color-primario;
 
     .footer-container {
         display: flex;
@@ -128,7 +134,7 @@ footer {
         margin-left: 215px;
         margin-right: 300px;
         font-family: bold;
-        color: #FFFFFF;
+        color: $color-third;
     }
 
     ul {
@@ -147,7 +153,7 @@ footer {
 
             a {
                 font-family: Bold;
-                color: #FFFFFF;
+                color: $color-third;
                 list-style: none;
                 text-decoration: none;
 
@@ -162,4 +168,344 @@ footer {
     }
 
 
+}
+
+
+.why {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/image\ 2.png);
+    width: 1769px;
+    height: 800px;
+    position: relative;
+
+    .lecture {
+        width: 560px;
+        height: 187px;
+        order: 2;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 288px;
+        left: 210px;
+
+        h2 {
+            font-size: 36px;
+            font-family: sans-serif, Bold;
+            color: $color-third;
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: "Josefin Sans", Bold;
+            color: $color-third;
+        }
+
+        .btn {
+            width: 288px;
+            height: 63px;
+            background-color: $color-primario;
+            color: $color-third;
+            font-size: 26px;
+            font-family: "Aleo";
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: $color-primario;
+            transform: scale(1.1);
+        }
+
+
+        .btn:active {
+            background-color: $color-five;
+            transform: scale(1.05);
+        }
+
+    }
+
+    .bottons {
+        width: 600px;
+        height: 90px;
+        position: absolute;
+        top: 694px;
+        left: 210px;
+        margin-left: 147px;
+        margin-top: 12px;
+        display: -webkit-box;
+        display: flex;
+
+
+        .fa-solid {
+            color: $color-third;
+            margin-left: 50px;
+            font-size: 2em;
+        }
+
+        .fa-magnifying-glass {
+            color: $color-primario;
+        }
+
+        .fa-light,
+        .fa-circle-check {
+            color: #FF6363;
+        }
+
+        .fa-thumbs-up {
+            color: #00A2FF;
+        }
+
+
+        a {
+            margin-top: 51px;
+            margin-left: -34px;
+            text-decoration: none;
+            color: $color-third;
+            font-family: "Josefin Sans", Bold;
+        }
+
+    }
+}
+
+.spain {
+    width: 1770px;
+    height: 700px;
+    background-image: url(../img/rectangule-uno.png);
+    background-color: #00A2FF;
+    position: relative;
+
+    .paragrap {
+        width: 543px;
+        height: 374px;
+        background-color: #232323e6;
+        position: absolute;
+        top: 227px;
+        left: 123px;
+
+        h2 {
+            font-size: 20px;
+            color: $color-third;
+
+            margin: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $color-third;
+            margin: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Josefin Sans", Bold;
+            line-height: 28px;
+            color: $color-third;
+            margin: 30px;
+        }
+
+        .btn {
+            width: 228px;
+            height: 63px;
+            background-color: $color-primario;
+            color: $color-third;
+            font-size: 26px;
+            font-family: "Aleo";
+            margin: 10px 30px 30px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .btn:hover {
+            background-color: $color-five;
+            transform: scale(1.1);
+        }
+
+        .btn:active {
+            background-color: #3144a3;
+            transform: scale(1.05);
+        }
+
+
+    }
+
+
+
+
+}
+
+.spain-second {
+    width: 1770px;
+    height: 700px;
+    background-image: url(../img/Rectangule-dos.png);
+    background-color: $color-six;
+    position: relative;
+
+    .paragrap {
+        width: 543px;
+        height: 374px;
+        background-color: #232323e6;
+        position: absolute;
+        top: 227px;
+        left: 676px;
+
+        h2 {
+            font-size: 20px;
+            color: $color-third;
+
+            margin: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $color-third;
+            margin: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Josefin Sans", Bold;
+            line-height: 28px;
+            color: $color-third;
+            margin: 30px;
+        }
+
+        .btn {
+            width: 228px;
+            height: 63px;
+            background-color: $color-primario;
+            color: $color-third;
+            font-size: 26px;
+            font-family: "Aleo";
+            margin: 10px 30px 30px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: $color-six;
+            transform: scale(1.1);
+        }
+
+
+        .btn:active {
+            background-color: #3144a3;
+            transform: scale(1.05);
+        }
+
+
+
+
+    }
+
+
+
+}
+
+.spain-third {
+    width: 1770px;
+    height: 700px;
+    background-image: url(../img/Rectangle-tres.png);
+    background-color: $color-six;
+    position: relative;
+
+    h2 {
+        font-size: 38px;
+        font-family: "Aleo";
+        color: $color-third;
+        position: absolute;
+        left: 610px;
+        top: 128px;
+
+    }
+
+    .photo {
+        position: absolute;
+        top: 247px;
+        left: 246px;
+        width: 445px;
+        height: 245px;
+
+        img {
+
+            object-fit: contain;
+        }
+
+
+    }
+
+
+    .third {
+        position: absolute;
+        top: 247px;
+        left: 692px;
+        color: $color-third;
+        background-color: #000000;
+        width: 668px;
+        height: 244px;
+        padding: 20px;
+
+        section {
+            font-size: 20px;
+            font-family: "Josefin Sans";
+
+            i {
+                color: $color-primario;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+}
+
+.last-footer {
+    width: 1773px;
+    height: 271px;
+    background-color: #000000;
+    display: flex;
+    position: relative;
+
+    .letter {
+        font-size: 23px;
+        font-family: "Josefin Sans";
+        color: $color-third;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top: 46px;
+        left: 798px;
+
+        h3 {
+            margin: 0;
+        }
+
+
+    }
+
+    .icon {
+        font-size: 16px;
+        color: $color-third;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top: 135px;
+        left: 798px;
+
+        .fa-brands {
+            margin: 10px;
+        }
+
+
+        .fa-linkedin {
+            color: $color-primario;
+        }
+
+
+    }
 }
